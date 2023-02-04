@@ -1,0 +1,69 @@
+[
+    {
+    "title": "Inception",
+    "rating": 8.8,
+    "budget": "160mil",
+    "box_office": "825.5mil",
+    "director": "Christopher Nolan",
+    "actors": ["Leonardo DiCaprio", "Tom Hardy", "Joseph Gordon-Levitt", "Ellen Page"],
+    "released": "2010-07-16",
+    "duration": "148min",
+    "genre": "Action, Adventure, Sci-Fi"
+    },
+    {
+    "title": "The Last Samurai",
+    "rating": 7.2,
+    "budget": "150mil",
+    "box_office": "456mil",
+    "director": "Edward Zwick",
+    "actors": ["Tom Cruise", "Ken Watanabe", "Billy Connolly", "Tony Goldwyn"],
+    "released": "2003-12-05",
+    "duration": "154min",
+    "genre": "Action, Drama, History"
+    },
+    {
+        "title": "Batman Begins",
+        "rating": 8.3,
+        "budget": "150mil",
+        "box_office": "373.6mil",
+        "director": "Christopher Nolan",
+        "actors": ["Christian Bale", "Liam Neeson", "Katie Holmes", "Gary Oldman"],
+        "released": "2005-06-15",
+        "duration": "140min",
+        "genre": "Action, Adventure"
+        },
+        {
+        "title": "The Dark Knight",
+        "rating": 9.0,
+        "budget": "185mil",
+        "box_office": "1.005bil",
+        "director": "Christopher Nolan",
+        "actors": ["Christian Bale", "Heath Ledger", "Aaron Eckhart", "Gary Oldman"],
+        "released": "2008-07-18",
+        "duration": "152min",
+        "genre": "Action, Crime, Drama"
+        },
+        {
+        "title": "The Dark Knight Rises",
+        "rating": 8.4,
+        "budget": "250mil",
+        "box_office": "1.085bil",
+        "director": "Christopher Nolan",
+        "actors": ["Christian Bale", "Tom Hardy", "Anne Hathaway", "Gary Oldman"],
+        "released": "2012-07-20",
+        "duration": "164min",
+        "genre": "Action, Thriller"
+        },
+        {
+        "title": "Oblivion",
+        "rating": 7.0,
+        "budget": "120mil",
+        "box_office": "286.2mil",
+        "director": "Joseph Kosinski",
+        "actors": ["Tom Cruise", "Morgan Freeman", "Olga Kurylenko", "Andrea Riseborough"],
+        "released": "2013-04-19",
+        "duration": "124min",
+        "genre": "Action, Adventure, Mystery"
+        }
+
+ ]

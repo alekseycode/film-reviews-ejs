@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+}
+
+.wrapper {
+    background-color: black;
+   
+}
+
+.data-container {
+    display: flex;
+}
+
+.title {
+    color: purple;
+    width: 50%;
+    text-align: center;
+}
+
+.data {
+    color: aliceblue;
+    width: 50%;
+ 
+}
+
+.btn-container {
+    display: flex;
+   justify-content: center;
+   margin-top: 80px;
+   padding-bottom: 300px;
+}
+
+
+
+.delete-btn {
+    margin-right: 40px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+  
+    transition: background-color 0.3s;
+}
+
+ .delete-btn:hover {
+      background-color: darkred;
+    }  
+
+
+.update-btn {
+    margin-left: 40px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+
+    transition: background-color 0.3s;
+}
+
+.update-btn:hover {
+    background-color: darkred;
+  } 
+
+ 

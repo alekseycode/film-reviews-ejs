@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/nav.css">
+    <link rel="stylesheet" href="/stylesheets/allFilms.css">
+    <title>All Films</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/createFilm">Create</a></li>
+            <li><a href="">Search</a></li>
+        </ul>
+    </nav>
+
+    <div class="wrapper">
+        <% film.forEach((film) => { %>
+            <div class="film-container">
+            <h2><a href="/oneFilm/<%=film.title%>"><%=film.title%></a></h2>
+           <p>Rating: <%= film.rating %></p>
+           <p>Director: <%= film.director %></p>
+        </div>
+        <% }) %>
+        
+    </div>
+</body>
+</html>

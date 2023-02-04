@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/nav.css">
+    <link rel="stylesheet" href="/stylesheets/oneFilm.css">
+    <title><%= film.title %></title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/allFilms">Films</a></li>
+            <li><a href="/createFilm">Create</a></li>
+        </ul>
+    </nav>
+    <div class="wrapper">
+        <div class="data-container">
+            <div class="title">
+                <h1><%= film.title %></h1>
+            </div>
+            <div class="data">
+                <p>Rating: <%= film.rating %></p>
+                <p>Budget: <%= film.budget %></p>
+                <p>Box Office: <%= film.box_office %></p>
+                <p>Director: <%= film.director %></p>
+                <p>Actors: </p>
+                <ul>
+                <% film.actors.forEach((actor) => { %>
+                    <li>
+                       <%= actor %>
+                    </li>
+                    <% })%>
+                </ul>
+                <p>Released: <%= film.released %></p>
+                <p>Duration: <%= film.duration %></p>
+                <p>Genre: <%= film.genre %></p>
+            </div>
+        </div>
+
+        <div class="btn-container">
+            <div class="delete-btn">
+                <form action="/api/deleteFilm/<%=film.title%>?_method=DELETE" method="post">
+            
+                <input type="submit" value="Delete <%=film.title%>" name="_method">
+                </form>
+            </div>
+            <div class="update-btn"><a href="/updateFilm/<%=film.title%>">Update <%=film.title%></a></div>
+                </div>
+        </div>
+   
+</body>
+</html>

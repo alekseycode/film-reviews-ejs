@@ -1,0 +1,33 @@
+.wrapper {
+  background-color: black;
+}
+body {
+  margin: 0;
+}
+
+
+.film-container {
+    padding: 20px;
+  text-align: center;
+  }
+
+  .film-container a {
+    text-decoration: none;
+  }
+
+  .film-container h2 {
+    transition: transform 0.3s
+  }
+
+  .film-container h2:hover {
+    transform: scale(1.1);
+
+  }
+
+  .film-container h2 {
+  font-family: "Anton", sans-serif;
+  }
+
+  .film-container p {
+    color:aliceblue;
+  }
