@@ -22,21 +22,23 @@
                 <h1><%= film.title %></h1>
             </div>
             <div class="data">
-                <p>Rating: <%= film.rating %></p>
-                <p>Budget: <%= film.budget %></p>
-                <p>Box Office: <%= film.box_office %></p>
-                <p>Director: <%= film.director %></p>
-                <p>Actors: </p>
-                <ul>
-                <% film.actors.forEach((actor) => { %>
-                    <li>
-                       <%= actor %>
-                    </li>
-                    <% })%>
-                </ul>
-                <p>Released: <%= film.released %></p>
-                <p>Duration: <%= film.duration %></p>
-                <p>Genre: <%= film.genre %></p>
+                <div class="data-wrapper">
+                    <p>Rating: <%= film.rating %></p>
+                    <p>Budget: <%= film.budget %></p>
+                    <p>Box Office: <%= film.box_office %></p>
+                    <p>Director: <%= film.director %></p>
+                    <p>Actors: </p>
+                    <ul>
+                    <% film.actors.forEach((actor) => { %>
+                        <li>
+                           <%= actor %>
+                        </li>
+                        <% })%>
+                    </ul>
+                    <p>Released: <%= film.released %></p>
+                    <p>Duration: <%= film.duration %></p>
+                    <p>Genre: <%= film.genre %></p>
+                </div>
             </div>
         </div>
 
@@ -44,10 +46,10 @@
             <div class="delete-btn">
                 <form action="/api/deleteFilm/<%=film.title%>?_method=DELETE" method="post">
             
-                <input type="submit" value="Delete <%=film.title%>" name="_method">
+                <input type="submit" value="Delete" name="_method">
                 </form>
             </div>
-            <div class="update-btn"><a href="/updateFilm/<%=film.title%>">Update <%=film.title%></a></div>
+            <div class="update-btn"><a href="/updateFilm/<%=film.title%>">Update</a></div>
                 </div>
         </div>
    

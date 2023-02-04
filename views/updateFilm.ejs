@@ -4,40 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/nav.css">
+    <link rel="stylesheet" href="/stylesheets/updateFilm.css">
     <title>Update <%=film.title%></title>
 </head>
 <body>
-    <form action="/api/updateFilm/<%=film.title%>?_method=PUT" method="post">
-
-        <label for="title">Title</label>
-        <input type="text" id="title" name="title" placeholder="<%=film.title%>" value="<%=film.title%>"> 
-
-        <label for="rating">Rating</label>
-        <input type="text" id="rating" name="rating" placeholder="<%=film.rating%>" value="<%=film.rating%>">
-
-        <label for="budget">Budget</label>
-        <input type="text" id="budget" name="budget" placeholder="<%=film.budget%>" value="<%=film.budget%>">
-
-        <label for="box_office">Box Office</label>
-        <input type="text" id="box_office" name="box_office" placeholder="<%=film.box_office%>" value="<%=film.box_office%>">
-
-        <label for="director">Director</label>
-        <input type="text" id="director" name="director" placeholder="<%=film.director%>" value="<%=film.director%>">
-
-        <label for="actors">Actors</label>
-        <input type="text" id="actors" name="actors" placeholder="<%=film.actors.join(', ')%>" value="<%=film.actors.join(', ')%>">
-
-        <label for="released">Released</label>
-        <input type="text" id="released" name="released" placeholder="<%=film.released%>" value="<%=film.released%>">
-
-        <label for="duration">Duration</label>
-        <input type="text" id="duration" name="duration" placeholder="<%=film.duration%>" value="<%=film.duration%>">
-
-        <label for="genre">Genre</label>
-        <input type="text" id="genre" name="genre" placeholder="<%=film.genre%>" value="<%=film.genre%>">
-
-        <input type="submit" value="Update <%=film.title%>" name="_method">
-
-    </form>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/allFilms">Films</a></li>
+            <li><a href="/createFilm">Create</a></li>
+        </ul>
+    </nav>
+    <div class="wrapper">
+        <div class="data-container">
+            <div class="title">
+                <h1>Update <%= film.title %></h1>
+            </div>
+            <div class="data">
+                <div class="form">
+                    <form action="/api/updateFilm/<%=film.title%>?_method=PUT" method="post">
+                        <label for="rating">Rating</label>
+                        <input type="text" id="rating" name="rating" placeholder="<%=film.rating%>" value="<%=film.rating%>">
+                        <label for="budget">Budget</label>
+                        <input type="text" id="budget" name="budget" placeholder="<%=film.budget%>" value="<%=film.budget%>">
+                        <label for="box_office">Box Office</label>
+                        <input type="text" id="box_office" name="box_office" placeholder="<%=film.box_office%>" value="<%=film.box_office%>">
+                        <label for="director">Director</label>
+                        <input type="text" id="director" name="director" placeholder="<%=film.director%>" value="<%=film.director%>">
+                        <label for="actors">Actors</label>
+                        <input type="text" id="actors" name="actors" placeholder="<%=film.actors.join(', ')%>" value="<%=film.actors.join(', ')%>">
+                        <label for="released">Released</label>
+                        <input type="text" id="released" name="released" placeholder="<%=film.released%>" value="<%=film.released%>">
+                        <label for="duration">Duration</label>
+                        <input type="text" id="duration" name="duration" placeholder="<%=film.duration%>" value="<%=film.duration%>">
+                        <label for="genre">Genre</label>
+                        <input type="text" id="genre" name="genre" placeholder="<%=film.genre%>" value="<%=film.genre%>">
+                        <input type="submit" value="Update" name="_method">
+                        <a href="/oneFilm/<%=film.title%>">Back</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+       
+    </div>
 </body>
 </html>

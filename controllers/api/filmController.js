@@ -70,7 +70,6 @@ async function updateFilm(req, res) {
             { $set: userInput },
             {upsert: true}
         )
-        // res.json({message: 'Successfully updated ' + req.body.title, payload: req.body} )
         res.redirect('/oneFilm/' + req.params.title)
     } catch (err) {
         console.log('Error in updateFilm(): ' + err);

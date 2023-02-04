@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+}
+
+.wrapper {
+    background-color: black;
+    padding-bottom: 225px;
+}
+
+.data-container {
+    display: flex;
+}
+
+.title {
+    color: purple;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.data {
+    color: aliceblue;
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    margin-top: 40px;
+}
+.data input {
+    display: block;
+    margin-bottom: 20px;
+}
+
+a {
+    color: white
+}
+
+
