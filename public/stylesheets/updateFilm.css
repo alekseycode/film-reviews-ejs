@@ -31,8 +31,20 @@ body {
     margin-bottom: 20px;
 }
 
+.update {
+    background-color: purple;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.3s
+}
+
+.update:hover {
+    background-color: darkred;
+}
+
 a {
     color: white
 }
-
 
