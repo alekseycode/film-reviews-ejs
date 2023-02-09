@@ -118,10 +118,15 @@ header {
 }
 
 .main-nav a {
-  text-decoration: none;
+  text-decoration: line-through;
   color: white;
   transition: color 0.3s;
 }
+
+#films {
+  text-decoration: none;
+}
+
 
 .main-nav a:hover,
 .main-nav a:focus {

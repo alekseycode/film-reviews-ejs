@@ -3,7 +3,7 @@ body {
 }
 
 .wrapper {
-    background-color: black;
+  background: linear-gradient(to right, hwb(300 0% 80%) 0%, #000000 50%, hwb(300 0% 50%) 180%)
 }
 
 .container {
