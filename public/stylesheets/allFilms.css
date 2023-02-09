@@ -13,6 +13,7 @@ body {
 
   .film-container a {
     text-decoration: none;
+    color: purple
   }
 
   .film-container h2 {
