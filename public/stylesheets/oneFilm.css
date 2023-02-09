@@ -9,6 +9,7 @@ body {
 
 .data-container {
     display: flex;
+    padding-top: 60px;
 }
 
 .title {
