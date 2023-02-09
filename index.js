@@ -29,8 +29,10 @@ const filmRouter = require('./routes/api/filmRouter')
 app.use("/", viewsRouter)
 app.use('/api', filmRouter)
 
-app.listen(3000, () => {
-    console.log("Server up on 3000");
+const PORT = process.env.PORT;
+
+app.listen(PORT, () => {
+    console.log(`Server up on ${PORT}`);
 
     connectToMongoDB();
 })
